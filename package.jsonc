@@ -1,0 +1,28 @@
+{
+  "name": "srl-syntax",
+  "displayName": "SRL Syntax",
+  "description": "Syntax highlighting for SRL files",
+  "version": "0.0.1",
+  "publisher": "Hågard Meyer",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "srl",
+        "aliases": ["SRL", "srl"],
+        "extensions": [".srl"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "srl",
+        "scopeName": "source.srl",
+        "path": "./syntaxes/srl.tmLanguage.json"
+      }
+    ]
+  }
+}

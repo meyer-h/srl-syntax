@@ -1,0 +1,35 @@
+{
+  "scopeName": "source.srl",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#strings" },
+    { "include": "#comments" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.srl",
+          "match": "\\b(IF|ELSE|ENDIF|SET|CALL)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.srl",
+          "begin": "\"",
+          "end": "\""
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.srl",
+          "match": "//.*$"
+        }
+      ]
+    }
+  }
+}
